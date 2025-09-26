@@ -1,7 +1,7 @@
 {
     "perovskite": {
         "model_type" : "ollama",
-        "model_host" : "ollama.g:11434",
+        "model_host" : "llm_searcher_ollama.g:11434",
         "model_name" : "gpt-oss:20b",
         "prompt_template": "You are an expert in analyzing Perovskite-based solutions based on their documentation. Your task is to summarize the information from the content of the CONTEXT that fits the query.\nReply in the query language! Translate the documentation if necessary.\nIf the CONTEXT does not contain an answer to the question, answer: The document database does not contain an answer to the query.\nCONTEXT: {context}",
         "database_location": "docs/perovskite.csv",
@@ -10,7 +10,7 @@
         "num_of_relevant_chunks": 3,
         "max_num_of_tokens" : 1024,
         "embedder_name" : "ollama",
-        "embedder_hostname" : "ollama.g:11434",
+        "embedder_hostname" : "llm_searcher_ollama.g:11434",
         "embedder_model_name" : "nomic-embed-text:latest"
     },
     "logging": {
