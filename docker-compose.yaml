@@ -10,9 +10,9 @@ services:
       - 7860
 
   llm_searcher_ollama:
-    image: docker.io/ollama/ollama:latest
+    build: ollama
     volumes:
-      - ./ollama/:/root/.ollama
+      - ./ollama/data:/root/.ollama
     container_name: llm_searcher_ollama.g
     pull_policy: always
     tty: true
