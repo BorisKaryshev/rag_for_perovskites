@@ -1,0 +1,13 @@
+services:
+  llm_searcher:
+    build: .
+    container_name: llm_searcher.g
+    hostname: llm_searcher.g
+    restart: no
+    network_mode: bridge
+    dns:
+      - 192.168.1.12
+      - 77.88.8.8
+      - 77.88.8.1
+    ports:
+      - 7860
